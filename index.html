@@ -1,78 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Lucas Cortés | Developer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/836a943e18.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/example.ico" />
     </head>
     <body>
+        <header>
+            <div class="container">
+            <nav>
+                <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icon.png" alt="Lucas" />
+                </a>
+                </div>
+                <div class="burger-menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#landing-page">
+                    <img
+                        src="images/test.jpg"
+                        alt="Lucas Cortés"
+                        class="profile-pic nav-link"
+                    />
+                    <span class="caption nav-link">Lucas Cortés</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/lucascortesramirez/" target="_blank" class="nav-link">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/lucas-c9" target="_blank" class="nav-link">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
         <main>
-
             <!--**********HOME**********-->
-            <section style = "width: 100%;
-            height: 100vh;
-            background: linear-gradient(
-                135deg,
-                rgba(0, 64, 77, 0.9) 0%,
-                rgba(0, 0, 0, 0.8) 100%
-            );
-            background-size: contain;
-            position: relative;">
-                <div style ="width: 100%;
-                    max-width: 90rem;
-                    margin: 0 auto;
-                    padding: 0 1.5rem;">
-                    <div style = "width: 100%;
-                    max-width: 58rem;
-                    text-transform: uppercase;
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    text-align: center;">
+            <section id="landing-page" class="landing-page">
+                <div class="container">
+                    <div class="main-message">
                         <h2>Lucas Cortés</h2>
+                        <br>
                         <h3>{full stack developer}</h3>
+                        <br>
                         <p>react - salesforce</p>
-                        <div>
-                            <div>
-                                <a href="#contact">Contact me</a>
+                        <br>
+                        <div class="intro-btn">
+                            <div class="cta">
+                            <a href="#contact" class="btn">Get In Touch</a>
                             </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/lucascortesramirez/">Linkedin</a>
+                            <div class="cta">
+                            <a href="#experience" class="btn">My Experience</a>
                             </div>
                         </div>
                         <div>
                             <a href="#about" class="scroll-down">
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
             <!--**********About**********-->
-            <section style="  width: 100%;
-            min-height: 100vh;
-            max-width: 70rem;
-            margin: auto;
-            background: rgb(19, 19, 19);">
-                <div style="display: flex;
-                align-items: center;
-                min-height: 80vh;">
-                    <div>
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="about-img">
                         <img
                         src="images/test.jpg"
                         alt="Lucas Cortés"
-                        style="height: 12rem;
-                        width: auto;
-                        border-radius: 50%;
-                        margin: 2rem;
-                        box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        class="about-pic"
                         />
                     </div>
-                    <div style="flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: 0;">
+                    <div class="about-text-box">
                         <h2>Hello 👋🏽</h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
@@ -82,199 +109,184 @@
                         </p>
                     </div>
                 </div>
+                <div>
+                    <a href="#skills" class="scroll-down">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                </div>
                 <hr />
             </section>
             <!--**********SKILLS**********-->
-            <section style="  width: 100%;
-            min-height: 100vh;
-            max-width: 70rem;
-            margin: auto;
-            background: rgb(19, 19, 19);">
-            <div style="display: flex;
-            align-items: center;
-            min-height: 80vh;">
-                <div>
+            <section id="skills" class="skills">
+            <div class="container">
+                <div class="tier-item">
+                    <h2>Skill</h2>
+                <div class="skill-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="skill-pic"
                     />
                 </div>
-                <div>
+                </div>
+                <div class="tier-item">
+                    <h2>Skill</h2>
+                <div class="skill-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="skill-pic"
                     />
                 </div>
-                <div>
+                </div>
+                <div class="tier-item">
+                    <h2>Skill</h2>
+                <div class="skill-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="skill-pic"
                     />
                 </div>
-                <div>
+                </div>
+                <div class="tier-item">
+                    <h2>Skill</h2>
+                <div class="skill-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="skill-pic"
                     />
                 </div>
-                <div>
+                </div>
+                <div class="tier-item">
+                    <h2>Skill</h2>
+                <div class="skill-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="skill-pic"
                     />
+                </div>
                 </div>
             </div>
+            <div>
+                <a href="#experience" class="scroll-down">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+            </div>
+            <hr />
             </section>
-            <!--**********SKILLS**********-->
-            <section style="  width: 100%;
-            min-height: 100vh;
-            max-width: 70rem;
-            margin: auto;
-            background: rgb(19, 19, 19);">
-            <div style="display: flex;
-            align-items: center;
-            min-height: 80vh;">
-                <div>
-                    <p style="text-align: center; background:cornsilk;">Date</p>
+            <!--**********EXPERIENCE**********-->
+            <section id="experience" class="experience">
+            <div class="container">
+                <div class="tier-item">
+                    <p>Date</p>
+                <div class="exp-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
-                    />
-                    <p style="text-align: center; background:cornsilk;">Job</p>
-                </div>
-                <div>
-                    <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="exp-pic"
                     />
                 </div>
-                <div>
-                    <p style="text-align: center; background:cornsilk;">Date</p>
-                    <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
-                    />
-                    <p style="text-align: center; background:cornsilk;">Job</p>
+                    <h2>Job</h2>
                 </div>
-                <div>
+                <div class="tier-item">
+                    <p>  </p>
+                <div class="exp-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/arrow.png"
+                        alt="Skill"
+                        class="exp-pic"
                     />
                 </div>
-                <div>
+                    <h2>  </h2>
+                </div>
+                <div class="tier-item">
+                    <p>Date</p>
+                <div class="exp-img">
                     <img
-                    src="images/test.jpg"
-                    alt="Lucas Cortés"
-                    style="height: 12rem;
-                    width: auto;
-                    border-radius: 50%;
-                    margin: 2rem;
-                    box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);"
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="exp-pic"
                     />
+                </div>
+                    <h2>Job</h2>
+                </div>
+                <div class="tier-item">
+                    <p></p>
+                <div class="exp-img">
+                    <img
+                        src="images/arrow.png"
+                        alt="Skill"
+                        class="exp-pic"
+                    />
+                </div>
+                    <h2></h2>
+                </div>
+                <div class="tier-item">
+                    <p>???</p>
+                <div class="exp-img">
+                    <img
+                        src="images/test.jpg"
+                        alt="Skill"
+                        class="exp-pic"
+                    />
+                </div>
+                    <h2>Next Challenge</h2>
                 </div>
             </div>
+            <div>
+                <a href="#contact" class="scroll-down">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+            </div>
+            <hr />
             </section>
-            <section style="width: 100%;
-            min-height: 100vh;
-            max-width: 70rem;
-            margin: auto;
-            padding-top: 5rem;">
-                <h2>Contact me :)</h2>
+
+            <!--**********CONTACT**********-->
+
+            <section id="contact" class="contact">
+                <h2>Get In Touch</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
                     necessitatibus, ducimus quas ea pariatur esse sequi iusto
                     repudiandae minus, harum quia, inventore aut officiis tempora
                     blanditiis quaerat explicabo optio rem.
                 </p>
-                <div style="min-height: 50vh;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;">
+                <div class="container">
                 <p>
                     <a href="mailto:chaoocharles@gmail.com"
                     ><i class="fas fa-envelope-open"></i> c9.lucas@gmail.com</a
                     >
                 </p>
                 <p>
-                    <a href="#" target="_blank"
-                    ><i class="fab fa-youtube"> Github</i></a
+                    <a href="https://github.com/lucas-c9" target="_blank"
+                    ><i class="fab fa-github"> lucas-c9</i></a
                     >
                 </p>
                 <p>
-                    <a href="#" target="_blank"><i class="fab fa-dev"> Linkedin</i></a>
+                    <a href="https://www.linkedin.com/in/lucascortesramirez/" target="_blank"><i class="fab fa-linkedin"> Lucas Cortés Ramírez</i></a>
                 </p>
                 </div>
                 <hr />
             </section>
-            <footer style="width: 100%;
-            max-width: 70rem;
-            margin: auto;
-            padding: 2.5rem;
-            color: #8a8a8a;
-            text-align: center;
-            font-size: 1.2rem;
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;">
-                <div style="  margin: 2rem 0;">
-                <p>
-                    <i class="fas fa-code"></i> with 💙 by Lucas Cortés &copy; 2021
-                </p>
+
+            <footer>
+                <div class="footer-coded-by">
+                    <p>
+                        <i class="fas fa-code"></i> with 💙 by Lucas Cortés &copy; 2021
+                    </p>
                 </div>
-                <div>
+                <div class="footer-nav">
                     <a href="#landing-page" class="footer-nav-link">Home</a>
                     <a href="#about" class="footer-nav-link">About</a>
-                    <a href="#services" class="footer-nav-link">Skills</a>
-                    <a href="projects" class="footer-nav-link">Experience</a>
+                    <a href="#skills" class="footer-nav-link">Skills</a>
+                    <a href="#experience" class="footer-nav-link">Experience</a>
                     <a href="#contact" class="footer-nav-link">Contact</a>
                     </div>
             </footer>
         </main>
     </body>
+    <script src="main.js"></script>
 </html>
